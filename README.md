@@ -9,7 +9,11 @@ library(RColorBrewer)
 library(ggplot2)
 
 # for theme_map
-devtools::source_gist("33baa3a79c5cfef0f6df")
+devtools::source_gist(
+  "33baa3a79c5cfef0f6df",
+  filename = "themes.R",
+  sha1 = "a4df9f1cb2c22c8d2b69520d8fdb6e292ab0a8f7"
+)
 
 # https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html
 # read U.S. counties moderately-simplified GeoJSON file
@@ -17,9 +21,9 @@ us <- readOGR(dsn="data/us.geojson", layer="OGRGeoJSON")
 ```
 
     ## OGR data source with driver: GeoJSON 
-    ## Source: "data/us.geojson", layer: "OGRGeoJSON"
-    ## with 3221 features and 9 fields
-    ## Feature type: wkbPolygon with 2 dimensions
+    ## Source: "/Users/hrbrmstr/projects/rd3albers/data/us.geojson", layer: "OGRGeoJSON"
+    ## with 3221 features
+    ## It has 9 fields
 
 ``` r
 # convert it to Albers equal area
