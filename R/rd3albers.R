@@ -6,7 +6,11 @@ library(RColorBrewer)
 library(ggplot2)
 
 # for theme_map
-devtools::source_gist("33baa3a79c5cfef0f6df", filename = "themes.R")
+devtools::source_gist(
+  "33baa3a79c5cfef0f6df",
+  filename = "themes.R",
+  sha1 = "a4df9f1cb2c22c8d2b69520d8fdb6e292ab0a8f7"
+)
 
 # https://www.census.gov/geo/maps-data/data/cbf/cbf_counties.html
 # read U.S. counties moderately-simplified GeoJSON file
